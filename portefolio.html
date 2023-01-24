@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio : Sabrina MOUGINOT</title>
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/heroes.css" rel="stylesheet">
+    <link href="ccs/footers.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- NAVBAR CONFIG  -->
+    <link href="navbar-top-fixed.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >Sabrina MOUGINOT : Développeur Web & Web Mobile</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#album">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="carousel">
+      <!-- CAROUSEL CONFIG -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/vocabulaire.jpg"
+              class="d-block w-100"
+              alt="Image représentant le dev front-end"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Développement Front-End</h1>
+                <p>
+                  Je réalise votre site web en HTML, CSS, JavaScript & Bootstrap
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-dark" href="">Contactez-moi</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/VI.jpg"
+              class="d-block w-100"
+              alt="Image représentant le dev back-end"
+            />
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Développement Back-end</h1>
+                <p>
+                  Je m'occupe également de la partie serveur : PHP, MySql &
+                  MariaDB
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-light" href="#">Contactez-moi</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/Sabrina.png"
+              class="d-block w-100"
+              alt="Image représentant le dev mobile"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Développement Mobile</h1>
+                <p>
+                  J'utilise également React native. 
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-dark" href="#">Contactez-moi</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+<section id="album">
+            <!-- ALBUM CONFIG -->
+            <div class="album py-5 bg-light">
+                <div class="container">
+                  <h3>Portfolio</h3>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                 <img src="assets/img/décembre 2021.png" class="d-block w-100" alt="Webdesign Project 1"/>
+
+                                <div class="card-body">
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis sunt a quos cum voluptas inventore incidunt reiciendis!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Visualiser</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Télécharger</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                               <img src="assets/img/mai 2022.jpg" class="d-block w-100" alt="Webdesign Project 2"/>
+
+                                <div class="card-body">
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, beatae incidunt reiciendis alias neque ad!.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Visualiser</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Télécharger</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="assets/img/Novembre 2022.png" class="d-block w-100" alt="Webdesign Project 2"/>
+
+
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum rem ex consequuntur perferendis laborum!.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Visualiser</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Télécharger</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+
+                        <section id="about">
+      <!--  ABOUT -->
+      <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/img/music.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="400" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Hi ! Je suis Sabrina</h1>
+        <p class="lead"> 36 ans et toutes mes dents. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam, nobis mollitia recusandae veritatis magnam modi suscipit possimus tempora commodi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="blog-footer">
+  <div class="b-example-divider mb-0">X</div>
+  <!--  FOOTER -->
+<section id="footer">
+  <p>2023 - Portefolio créé par <a href="https://github.com/SabrinaMouginot">Sabrina</a>. Dans le cadre de ma <a href="https://www.linkedin.com/in/sabrinamouginot/">recherche d'emploi</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+</section>
+<!-- Scripts -->
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
